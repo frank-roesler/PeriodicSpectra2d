@@ -6,6 +6,6 @@ The main building blocks of the routine are
 * `Main.m` - Main script that returns approximation of the spectrum;
 * `potential(x,y)` - returns value of potential function for input x,y in [0,1]<sup>2</sup>;
 * `compute_potential_matrix(a,N)` - Computes operator matrix of the potential in Fourier representation. Input: vector of frequencies `k`, Fourier coefficients `a` and size of potential matrix `N`.
-* `GD(z_start, stepsize, maxiter, tol)` - performs gradient descent minimization until `|det(I-K(z))|<tol` or maxiter steps have been taken.
+* `newton_method(z_start, maxiter, tol)` - performs Newton iteration until `|det(I-K(z))|<tol` or maxiter steps have been taken.
 
 Any comments or queries are welcome at https://frank-roesler.github.io/contact/
